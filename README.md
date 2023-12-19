@@ -1,2 +1,2 @@
-# 42-Tasks
-Cursus-Urduliz
+# 42-Tasks-Libft
+Functions explained (Spanish) at functions branch.
