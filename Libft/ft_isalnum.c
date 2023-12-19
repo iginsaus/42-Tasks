@@ -1,20 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/14 09:09:45 by iginsaus          #+#    #+#             */
-/*   Updated: 2023/12/19 17:12:41 by iginsaus         ###   ########.fr       */
+/*   Created: 2023/12/14 10:06:18 by iginsaus          #+#    #+#             */
+/*   Updated: 2023/12/19 17:10:11 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+int	ft_isalnum(int c)
+
+int	ft_isalnum(int c)
 {
-	if ((c >= '0' && c <= '9'))
+	if (ft_isalpha(int c) || ft_isdigit(int c))
 	{
 		return (1);
 	}
