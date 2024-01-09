@@ -6,20 +6,27 @@
 /*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 10:56:48 by iginsaus          #+#    #+#             */
-/*   Updated: 2023/12/19 17:30:49 by iginsaus         ###   ########.fr       */
+/*   Updated: 2023/12/14 11:09:46 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+int  ft_isprint(int c)
 {
-	if (c >= 32 && c <= 126)
-	{
-		return (1);
-	}
-	else
-	{
-	return (0);
-	}
+  return (c >= 32 && c <= 126);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+   char c;
+
+   printf("Input a printable character to obtain 1: ");
+   scanf("%c", &c);
+
+   printf("%d", ft_isprint(c));
+   return (0);
+}
+*/

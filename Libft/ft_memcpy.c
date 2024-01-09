@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   memcpy.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/15 16:16:49 by iginsaus          #+#    #+#             */
-/*   Updated: 2023/12/19 17:57:49 by iginsaus         ###   ########.fr       */
+/*   Updated: 2023/12/15 16:17:10 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,17 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
+/*
+#include <stdio.h>
+
+int main() {
+    char src[18] = "Ejemplo de memcpy";
+    char dst[18];
+    
+    ft_memcpy(dst, src, sizeof(src));
+    
+    printf("Cadena copiada: %s", dst);
+    
+    return (0);
+}
+*/

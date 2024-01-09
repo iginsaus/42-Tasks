@@ -6,7 +6,7 @@
 /*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 11:28:57 by iginsaus          #+#    #+#             */
-/*   Updated: 2023/12/19 17:44:55 by iginsaus         ###   ########.fr       */
+/*   Updated: 2023/12/14 11:48:50 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,17 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
+/*
+#include <stdio.h>
+
+int main()
+{
+  char str[4] = "Caca";
+
+  ft_memset(str, 'V', 1);
+
+  printf("%s\n", str);
+
+  return 0;
+}
+*/

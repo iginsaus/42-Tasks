@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   memmove.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/15 16:22:44 by iginsaus          #+#    #+#             */
-/*   Updated: 2023/12/19 17:57:26 by iginsaus         ###   ########.fr       */
+/*   Updated: 2023/12/15 16:22:51 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,17 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		return (dst);
 	}
 }
+/*
+#include <stdio.h>
+
+int main() {
+    char src[18] = "Ejemplo de memmove";
+    char dst[18];
+    
+    ft_memmove(dst, src, sizeof(src));
+    
+    printf("Cadena copiada: %s", dst);
+    
+    return (0);
+}
+*/
