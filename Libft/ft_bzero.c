@@ -12,27 +12,29 @@
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void ft_bzero(void *s, size_t n)
 {
-	size_t	i;
-	char	*str;
+    char *p = s;
 
-	str = s;
-	i = 0;
-	while (i < n)
-	{
-		str[i] = 0;
-		i++;
-	}
+    while (n--)
+        *p++ = 0;
 }
-
+/*
 #include <stdio.h>
 
-int	main(void)
+int main(void)
 {
-	char	str[11] = "Hello World";
+    char str[11] = "Hello World";
+    int i = 0;
 
-	ft_bzero(str, 5);
-	printf("%s\n", str);
-	return (0);
+    ft_bzero(str, 3);
+
+    while (i < 11)
+    {
+        printf("%c", str[i]);
+        i++;
+    }
+
+    return (0);
 }
+*/
