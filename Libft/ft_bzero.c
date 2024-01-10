@@ -25,3 +25,14 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
+
+#include <stdio.h>
+
+int	main(void)
+{
+	char	str[11] = "Hello World";
+
+	ft_bzero(str, 5);
+	printf("%s\n", str);
+	return (0);
+}
