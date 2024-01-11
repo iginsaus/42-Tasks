@@ -14,26 +14,28 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t	i;
 	unsigned char	*str;
 
-	str = s;
-	i = 0;
-	while (i < n)
+	str = (unsigned char *)s;
+	while (n-- > 0)
 	{
-		str[i] = 0;
-		i++;
+		*str++ = 0;
 	}
 }
 /*
-#include <stdio.h>
-
-int	main(void)
+int main(void)
 {
-	char	str[11] = "Hello World";
+    char str[11] = "Hello World";
+    int i = 0;
 
-	ft_bzero(str, 5);
-	printf("%s\n", str);
-	return (0);
+    ft_bzero(str, 3);
+
+    while (i < 11)
+    {
+        printf("%c", str[i]);
+        i++;
+    }
+
+    return (0);
 }
 */
