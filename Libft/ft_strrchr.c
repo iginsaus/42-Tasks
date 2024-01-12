@@ -1,40 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/10 19:01:54 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/10 19:02:10 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/11 15:48:18 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/12 12:00:24 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+char	*ft_strrchr(const char *s, int c)
 {
-	size_t	i;
+	char *ptr = (char *)s + ft_strlen(s);
 
-	i = 0;
-	while (s[i] != '\0')
+	while (ptr >= s)
 	{
-		i++;
+		if (*ptr == c)
+			return (ptr);
+		ptr--;
 	}
-	return (i);
+
+	return (NULL);
 }
-/*
+
 #include <stdio.h>
 
-int  main()
+int main(void)
 {
-   char    s[10] = "Hola Mundo";
-   size_t   i;
+	char *str = "Hola, mundo";
+	char c = 'n';
+	char *ptr;
+	int	n;
 
-   i = ft_strlen(s);
+	ptr = ft_strrchr(str, c);
+	n = ft_strlen(ptr);
 
-   printf("Length of string \"Hola Mundo\" is: %zu\n", i);
+	if (ptr)
+		printf("Character '%c' found in string '%s' back position '%d'.\n", c, str, n);
+	else
+		printf("Character '%c' not found in string '%s'.\n", c, str);
 
-   return (0);
+	return (0);
 }
-*/

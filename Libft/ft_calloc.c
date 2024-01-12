@@ -1,41 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/10 19:07:34 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/11 11:52:11 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/11 17:32:09 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/12 18:07:08 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void	*ft_calloc(size_t count, size_t size)
 {
-	unsigned char	*str;
+	void	*rme;
 
-	str = (unsigned char *)s;
-	while (n-- > 0)
+	rme = malloc(size * count);
+
+	if (!rme)
 	{
-		*str++ = 0;
+		return (NULL);
 	}
+	else
+	{
+		ft_bzero(rme, size * count);
+	}
+	return (rme);
 }
-/*
-int main(void)
+
+#include <stdio.h>
+
+int main() 
 {
-    char str[11] = "Hello World";
-    int i = 0;
+    size_t count = 5;
+    size_t size =  sizeof(int);
+    int *arr = (int *)ft_calloc(count, size);
 
-    ft_bzero(str, 3);
-
-    while (i < 11)
-    {
-        printf("%c", str[i]);
+    size_t i = 0;
+    while (i < count) 
+	{
+        printf("%d ", arr[i]);
         i++;
     }
 
-    return (0);
+    free(arr);
+	return(0);
 }
-*/

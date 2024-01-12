@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/15 16:25:31 by iginsaus          #+#    #+#             */
-/*   Updated: 2023/12/19 17:57:00 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/11 13:58:09 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/11 14:20:08 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,12 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (c);
 }
-
+/*
 #include <stdio.h>
 
 int main() {
   char src[] = "Hola, mundo!";
-  char dst[6];
+  char dst[4];
 
   size_t len = ft_strlcpy(dst, src, sizeof(dst));
 
@@ -46,3 +46,4 @@ int main() {
 
   return 0;
 }
+*/

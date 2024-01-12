@@ -1,41 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/10 19:07:34 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/11 11:52:11 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/11 15:07:54 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/11 15:19:25 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+char	*ft_strchr(const char *s, int c)
 {
-	unsigned char	*str;
-
-	str = (unsigned char *)s;
-	while (n-- > 0)
+	while (*s)
 	{
-		*str++ = 0;
+		if (*s == c)
+			return ((char *)s);
+		s++;
 	}
+	return (NULL);
 }
-/*
+
+#include <stdio.h>
+
 int main(void)
 {
-    char str[11] = "Hello World";
-    int i = 0;
+	char *str = "Hola, mundo";
+	char c = 'o';
+	char *ptr;
 
-    ft_bzero(str, 3);
+	ptr = ft_strchr(str, c);
 
-    while (i < 11)
-    {
-        printf("%c", str[i]);
-        i++;
-    }
+	if (ptr)
+		printf("Character '%c' found in string '%s', in position '%ld'\n", c, str, (ptr - str)+1); 
+	else
+		printf("Character '%c' not not found in string '%s'.\n", c, str);
 
-    return (0);
+	return (0);
 }
-*/
