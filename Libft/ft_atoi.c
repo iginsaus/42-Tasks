@@ -45,7 +45,7 @@ int	ft_atoi(const char *str)
   	}		
 		return (num * sign);
 }
-
+/*
 #include <stdio.h>
 
 int main() 
@@ -58,3 +58,4 @@ int main()
 
   return (0);
 }
+*/
