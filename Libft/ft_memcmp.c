@@ -6,7 +6,7 @@
 /*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 17:30:18 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/12 12:59:34 by iginsaus         ###   ########.fr       */
+/*   Updated: 2024/01/23 18:07:57 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
+/*
 #include <stdio.h>
 #include <string.h>
 
@@ -48,3 +48,4 @@ int main()
 
   return (0);
 }
+*/

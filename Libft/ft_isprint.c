@@ -6,15 +6,15 @@
 /*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 19:00:37 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/10 19:01:00 by iginsaus         ###   ########.fr       */
+/*   Updated: 2024/01/23 17:34:29 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int  ft_isprint(int c)
+int	ft_isprint(int c)
 {
-  return (c >= 32 && c <= 126);
+	return (c >= 32 && c <= 126);
 }
 /*
 #include <stdio.h>

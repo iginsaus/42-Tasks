@@ -6,7 +6,7 @@
 /*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 15:48:18 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/12 12:00:24 by iginsaus         ###   ########.fr       */
+/*   Updated: 2024/01/23 18:35:59 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,20 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char *ptr = (char *)s + ft_strlen(s);
+	char	*ptr;
 
+	ptr = (char *)s + ft_strlen(s);
 	while (ptr >= s)
 	{
 		if (*ptr == c)
+		{
 			return (ptr);
+		}
 		ptr--;
 	}
-
 	return (NULL);
 }
-
+/*
 #include <stdio.h>
 
 int main(void)
@@ -39,9 +41,14 @@ int main(void)
 	n = ft_strlen(ptr);
 
 	if (ptr)
-		printf("Character '%c' found in string '%s' back position '%d'.\n", c, str, n);
+	{
+		printf("Character '%c' found in string '%s' back position '%d'.\n", 
+		c, str, n);
+	}
 	else
+	{
 		printf("Character '%c' not found in string '%s'.\n", c, str);
-
+	}
 	return (0);
 }
+*/

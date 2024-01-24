@@ -6,7 +6,7 @@
 /*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 17:28:52 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/12 12:22:25 by iginsaus         ###   ########.fr       */
+/*   Updated: 2024/01/23 18:41:37 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
+/*
 #include <stdio.h>
 #include <string.h>
 
@@ -47,3 +47,4 @@ int main() {
 
   return (0);
 }
+*/

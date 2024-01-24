@@ -6,7 +6,7 @@
 /*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 17:32:09 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/12 18:07:08 by iginsaus         ###   ########.fr       */
+/*   Updated: 2024/01/23 17:18:52 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*rme;
 
 	rme = malloc(size * count);
-
 	if (!rme)
 	{
 		return (NULL);
@@ -28,7 +27,7 @@ void	*ft_calloc(size_t count, size_t size)
 	}
 	return (rme);
 }
-
+/*
 #include <stdio.h>
 
 int main() 
@@ -47,3 +46,4 @@ int main()
     free(arr);
 	return(0);
 }
+*/

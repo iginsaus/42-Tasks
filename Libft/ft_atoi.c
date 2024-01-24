@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/11 17:31:47 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/12 15:54:00 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/23 17:11:08 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/23 17:16:44 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,8 @@ int	ft_atoi(const char *str)
 
 	sign = 1;
 	num = 0;
-
 	while (str[0] == ' ' || (str[0] >= 9 && str[0] <= 13))
 		str++;
-
 	if (str[0] == '+')
 	{
 		str++;
@@ -32,18 +30,12 @@ int	ft_atoi(const char *str)
 		sign = -1;
 		str++;
 	}
-
 	while (str[0] != '\0' && str[0] >= '0' && str[0] <= '9')
 	{
 		num = num * 10 + str[0] - '0';
 		str++;
 	}
-
-	if (num > 2147483647)
-  	{
-    	return (-1);
-  	}		
-		return (num * sign);
+	return (num * sign);
 }
 /*
 #include <stdio.h>

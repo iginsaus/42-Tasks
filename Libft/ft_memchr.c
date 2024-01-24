@@ -6,7 +6,7 @@
 /*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 17:29:55 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/12 12:39:27 by iginsaus         ###   ########.fr       */
+/*   Updated: 2024/01/23 17:35:52 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
-
+/*
 #include <stdio.h>
 #include <string.h>
 
@@ -50,3 +50,4 @@ int main()
 
   return (0);
 }
+*/
