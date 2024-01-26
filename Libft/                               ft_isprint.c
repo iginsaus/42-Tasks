@@ -26,7 +26,7 @@ int main(void)
    printf("Input a printable character to obtain 1: ");
    scanf("%c", &c);
 
-   printf("%d", ft_isprint(c));
+   printf("%d\n", ft_isprint(c));
    return (0);
 }
 */
