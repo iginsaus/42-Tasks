@@ -25,14 +25,12 @@ void	*ft_memset(void *b, int c, size_t len)
 	return (b);
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
-	char	str;
+	char str[5];
 
-	str [4] = "Caca";
-	ft_memset(str, 'V', 1);
+	ft_memset(str, 'V', 4);
+	str[4] = '\0';
 	printf("%s\n", str);
 	return (0);
 }
