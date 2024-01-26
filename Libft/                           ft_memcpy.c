@@ -29,14 +29,13 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 /*
 #include <stdio.h>
 
-int main() {
-    char src[18] = "Ejemplo de memcpy";
-    char dst[18];
-    
-    ft_memcpy(dst, src, sizeof(src));
-    
-    printf("Cadena copiada: %s", dst);
-    
-    return (0);
+int	main(void)
+{
+	char	src[18] = "memcpy example";
+	char	dst[18];
+
+	ft_memcpy(dst, src, sizeof(src));
+	printf("Copied string:  %s\n", dst);
+	return (0);
 }
 */
