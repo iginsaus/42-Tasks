@@ -25,7 +25,7 @@ int	main(void)
 
 	printf("Input an alphabetical character to obtain 1: ");
 	scanf("%c", &c);
-	printf("%d", ft_isalpha(c));
+	printf("%d\n", ft_isalpha(c));
 	return (0);
 }
 */
