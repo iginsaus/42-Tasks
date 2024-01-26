@@ -18,14 +18,13 @@ int	ft_isalnum(int c)
 /*
 #include <stdio.h>
 
-int main(void)
+int	main(void)
 {
-   char c;
+	char	c;
 
-   printf("Input an alphanumeric character to obtain 1: ");
-   scanf("%c", &c);
-
-   printf("%d", ft_isalnum(c));
-   return (0);
+	printf("Input an alphanumeric character to obtain 1: ");
+	scanf("%c", &c);
+	printf("%d", ft_isalnum(c));
+	return (0);
 }
 */
