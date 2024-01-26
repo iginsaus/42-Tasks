@@ -19,14 +19,13 @@ int	ft_isascii(int c)
 /*
 #include <stdio.h>
 
-int main(void)
+int	main(void)
 {
-   char c;
+	char	c;
 
-   printf("Input an ascii character to obtain 1: ");
-   scanf("%c", &c);
-
-   printf("%d", ft_isascii(c));
-   return (0);
+	printf("Input an ascii character to obtain 1: ");
+	scanf("%c", &c);
+	printf("%d", ft_isascii(c));
+	return (0);
 }
 */
