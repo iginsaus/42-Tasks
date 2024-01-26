@@ -25,7 +25,7 @@ int	main(void)
 
 	printf("Input a digit to obtain 1: ");
 	scanf("%c", &c);
-	printf("%d", ft_isdigit(c));
+	printf("%d\n", ft_isdigit(c));
 	return (0);
 }
 */
