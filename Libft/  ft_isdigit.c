@@ -19,14 +19,13 @@ int	ft_isdigit(int c)
 /*
 #include <stdio.h>
 
-int main(void)
+int	main(void)
 {
-   char c;
+	char	c;
 
-   printf("Input a digit to obtain 1: ");
-   scanf("%c", &c);
-
-   printf("%d", ft_isdigit(c));
-   return (0);
+	printf("Input a digit to obtain 1: ");
+	scanf("%c", &c);
+	printf("%d", ft_isdigit(c));
+	return (0);
 }
 */
