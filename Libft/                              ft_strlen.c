@@ -28,10 +28,10 @@ size_t	ft_strlen(const char *s)
 
 int	main(void)
 {
-	char	s;
+	char	*s;
 	size_t	i;
 
-	s[10] = "Hola Mundo";
+	s = "Hola Mundo";
 	i = ft_strlen(s);
 	printf("Length of string \"Hola Mundo\" is: %zu\n", i);
 	return (0);
