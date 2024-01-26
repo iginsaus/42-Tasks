@@ -23,19 +23,19 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 /*
-int main(void)
+#include <stdio.h>
+
+int	main(void)
 {
-    char str[11] = "Hello World";
-    int i = 0;
+	char	str[11] = "Hello World";
+	int		i = 0;
 
-    ft_bzero(str, 3);
-
-    while (i < 11)
-    {
-        printf("%c", str[i]);
-        i++;
-    }
-
-    return (0);
+	ft_bzero(str, 3);
+	while (i < 11)
+	{
+		printf("%c", str[i]);
+		i++;
+	}
+	return (0);
 }
 */
