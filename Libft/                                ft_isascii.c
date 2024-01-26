@@ -25,7 +25,7 @@ int	main(void)
 
 	printf("Input an ascii character to obtain 1: ");
 	scanf("%c", &c);
-	printf("%d", ft_isascii(c));
+	printf("%d\n", ft_isascii(c));
 	return (0);
 }
 */
