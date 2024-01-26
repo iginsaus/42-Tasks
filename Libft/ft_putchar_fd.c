@@ -19,23 +19,20 @@ void	ft_putchar_fd(char c, int fd)
 /*
 #include <stdio.h>
 
-int main()
+int	main(void)
 {
-    FILE *fp;
+	FILE	*fp;
 
-    fp = fopen("test.txt", "w");
-    if (fp == NULL)
-    {
-        perror("Error opening file");
-        return 1;
-    }
-
-    fprintf(fp, "a\n");
-    fprintf(fp, "b\n");
-    fprintf(fp, "c\n");
-
-    fclose(fp);
-
-    return 0;
+	fp = fopen("test.txt", "w");
+	if (fp == NULL)
+	{
+		perror("Error opening file");
+		return (1);
+	}
+	fprintf(fp, "a\n");
+	fprintf(fp, "b\n");
+	fprintf(fp, "c\n");
+	fclose(fp);
+	return (0);
 }
 */
