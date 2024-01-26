@@ -40,14 +40,13 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 /*
 #include <stdio.h>
 
-int main() {
-    char src[18] = "Ejemplo de memmove";
-    char dst[18];
-    
-    ft_memmove(dst, src, sizeof(src));
-    
-    printf("Cadena copiada: %s", dst);
-    
-    return (0);
+int	main(void)
+{
+	char	src[18] = "memmove example";
+	char	dst[18];
+
+	ft_memmove(dst, src, sizeof(src));
+	printf("Copied string:  %s\n", dst);
+	return (0);
 }
 */
