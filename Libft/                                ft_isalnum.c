@@ -24,7 +24,7 @@ int	main(void)
 
 	printf("Input an alphanumeric character to obtain 1: ");
 	scanf("%c", &c);
-	printf("%d", ft_isalnum(c));
+	printf("%d\n", ft_isalnum(c));
 	return (0);
 }
 */
