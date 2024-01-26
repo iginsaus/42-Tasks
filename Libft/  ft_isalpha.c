@@ -19,14 +19,13 @@ int	ft_isalpha(int c)
 /*
 #include <stdio.h>
 
-int main(void)
+int	main(void)
 {
-   char c;
+	char	c;
 
-   printf("Input an alphabetical character to obtain 1: ");
-   scanf("%c", &c);
-
-   printf("%d", ft_isalpha(c));
-   return (0);
+	printf("Input an alphabetical character to obtain 1: ");
+	scanf("%c", &c);
+	printf("%d", ft_isalpha(c));
+	return (0);
 }
 */
