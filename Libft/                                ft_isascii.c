@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iginsaus <iginsaus@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/10 18:52:15 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/23 17:31:06 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/30 16:58:57 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/30 16:59:33 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ int	ft_isascii(int c)
 	return (c >= 0 && c <= 127);
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
 	char	c;
