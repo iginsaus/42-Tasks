@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iginsaus <iginsaus@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/10 19:00:37 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/23 17:34:29 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/30 17:09:49 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/30 17:09:57 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,13 @@ int	ft_isprint(int c)
 	return (c >= 32 && c <= 126);
 }
 /*
-#include <stdio.h>
-
-int main(void)
+int	main(void)
 {
-   char c;
+	char	c;
 
-   printf("Input a printable character to obtain 1: ");
-   scanf("%c", &c);
-
-   printf("%d\n", ft_isprint(c));
-   return (0);
+	printf("Input a printable character to obtain 1: ");
+	scanf("%c", &c);
+	printf("%d\n", ft_isprint(c));
+	return (0);
 }
 */
