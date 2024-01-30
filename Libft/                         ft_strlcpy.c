@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iginsaus <iginsaus@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/11 13:58:09 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/11 14:20:08 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/30 17:20:46 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/30 17:20:52 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	return (c);
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
 	char	src[10] = "Bye World!";
