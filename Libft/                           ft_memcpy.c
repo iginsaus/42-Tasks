@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iginsaus <iginsaus@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/11 11:58:30 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/11 11:59:11 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/30 17:16:27 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/30 17:16:31 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,6 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	return (dst);
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
 	char	src[18] = "memcpy example";
