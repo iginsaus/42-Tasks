@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iginsaus <iginsaus@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/10 18:55:49 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/23 17:32:33 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/30 16:31:21 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/30 16:31:38 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ int	ft_isdigit(int c)
 	return (c >= '0' && c <= '9');
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
 	char	c;
