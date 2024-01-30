@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iginsaus <iginsaus@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/11 12:00:10 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/11 12:00:24 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/30 17:18:01 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/30 17:18:05 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
 	char	src[18] = "memmove example";
