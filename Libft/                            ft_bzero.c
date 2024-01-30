@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iginsaus <iginsaus@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/10 19:07:34 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/11 11:52:11 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/30 17:14:18 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/30 17:14:25 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,6 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
 	char	str[11] = "Hello World";
@@ -33,7 +31,7 @@ int	main(void)
 	ft_bzero(str, 3);
 	while (i < 11)
 	{
-		printf("%c", str[i]);
+		printf("%c\n", str[i]);
 		i++;
 	}
 	return (0);
