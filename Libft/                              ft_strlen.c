@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iginsaus <iginsaus@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/10 19:01:54 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/10 19:02:10 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/30 17:11:22 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/30 17:11:26 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,6 @@ size_t	ft_strlen(const char *s)
 	return (i);
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
 	char	*s;
