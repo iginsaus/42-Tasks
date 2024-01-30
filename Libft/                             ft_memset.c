@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iginsaus <iginsaus@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/10 19:02:42 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/10 19:03:17 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/30 17:12:49 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/30 17:12:53 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*ft_memset(void *b, int c, size_t len)
 /*
 int	main(void)
 {
-	char str[5];
+	char	str[5];
 
 	ft_memset(str, 'V', 4);
 	str[4] = '\0';
