@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iginsaus <iginsaus@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/10 18:46:58 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/23 17:29:00 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/30 16:30:10 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/30 16:30:38 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ int	ft_isalpha(int c)
 	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
 	char	c;
