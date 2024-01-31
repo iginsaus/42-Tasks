@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iginsaus <iginsaus@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/11 17:29:55 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/23 17:35:52 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/30 18:08:11 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/30 18:16:08 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,22 +32,20 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (0);
 }
 /*
-#include <stdio.h>
-#include <string.h>
-
-int main() 
+int	main(void)
 {
-  const char str[] = "Adios Mundo Cruel";
-  char *ptr;
+	const char	str[15] = "Hello friend";
+	char		*ptr;
 
-  ptr = ft_memchr(str, 'o', ft_strlen(str));
-
-  if (ptr) {
-    printf("First 'o' in the string is in position: %lu.\n", (ptr - str)+1);
-  } else {
-    printf("Character 'o' not found in string, dear friend.\n");
-  }
-
-  return (0);
+	ptr = ft_memchr(str, 'o', ft_strlen(str));
+	if (ptr)
+	{
+		printf("First 'o' in the string is in pstn.: %lu.\n", (ptr - str) + 1);
+	}
+	else
+	{
+		printf("Character 'o' not found in string, dear friend.\n");
+	}
+	return (0);
 }
 */
