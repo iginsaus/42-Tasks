@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iginsaus <iginsaus@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/11 14:22:14 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/11 14:23:15 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/30 17:28:53 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/30 17:36:20 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ int	ft_toupper(int c)
 	return (c);
 }
 /*
-int main (void)
+int	main(void)
 {
-	char a;
-	a = 'X';
+	char	a;
 
+	a = 'y';
 	a = ft_toupper(a);
 	printf("%c\n", a);
 	return (0);
