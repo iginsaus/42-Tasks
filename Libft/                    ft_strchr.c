@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iginsaus <iginsaus@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/11 15:07:54 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/23 18:19:57 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/30 17:41:39 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/31 16:44:09 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,31 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s)
+	char		str;
+	int			i;
+
+	str = c;
+	i = 0;
+	while (s[i] != str)
 	{
-		if (*s == c)
-			return ((char *)s);
-		s++;
+		if (s[i] == 0)
+			return (NULL);
+		i++;
 	}
-	return (NULL);
+	return ((char *)&s[i]);
 }
 /*
-#include <stdio.h>
-
-int main(void)
+int	main(void)
 {
-	char *str = "Hola, mundo";
-	char c = 'o';
-	char *ptr;
+	char	*str = "Hello, friend";
+	char	c = 'o';
+	char	*ptr;
 
 	ptr = ft_strchr(str, c);
-
 	if (ptr)
 	{
-		printf("Character '%c' found in string '%s', in position '%ld'\n", 
-		c, str, (ptr - str)+1); 
+		printf("Character '%c' found in string '%s', in position '%ld'\n",
+			c, str, (ptr - str) + 1);
 	}
 	else
 	{
