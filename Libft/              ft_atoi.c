@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iginsaus <iginsaus@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/23 17:11:08 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/23 17:16:44 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/31 16:55:19 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/31 16:57:57 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,16 +38,12 @@ int	ft_atoi(const char *str)
 	return (num * sign);
 }
 /*
-#include <stdio.h>
-
-int main() 
+int	main(void)
 {
-  char str[6] = "123456";
+	char	str[6] = "123456";
+	int		result = ft_atoi(str);
 
-  int result = ft_atoi(str);
-
-  printf("El número convertido es: %d\n", result);
-
-  return (0);
+	printf("El número convertido es: %d\n", result);
+	return (0);
 }
 */
