@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iginsaus <iginsaus@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/11 17:28:52 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/23 18:41:37 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/30 17:54:17 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/30 18:05:47 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,23 +28,24 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (0);
 }
 /*
-#include <stdio.h>
-#include <string.h>
+int	main(void)
+{
+	char	str1[12] = "Hola, mundo";
+	char	str2[12] = "Adios, mundo";
+	int		result = ft_strncmp(str1, str2, ft_strlen(str1));
 
-int main() {
-  char str1[12] = "Hola, mundo";
-  char str2[12] = "Adios, mundo";
-
-  int result = ft_strncmp(str1, str2, strlen(str1));
-
-  if (result == 0) {
-    printf("strings are equal.\n");
-  } else if (result < 0) {
-    printf("first string smaller than second one.\n");
-  } else {
-    printf("first string bigger than second one.\n");
-  }
-
-  return (0);
+	if (result == 0)
+	{
+		printf("strings are equal.\n");
+	}
+	else if (result < 0)
+	{
+		printf("first string smaller than second one.\n");
+	}
+	else
+	{
+		printf("first string bigger than second one.\n");
+	}
+	return (0);
 }
 */
