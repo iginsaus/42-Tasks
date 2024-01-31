@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iginsaus <iginsaus@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/11 15:48:18 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/23 18:35:59 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/30 17:49:38 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/31 16:51:08 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,36 +14,37 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*ptr;
+	char		str;
+	char		*end;
+	int			i;
 
-	ptr = (char *)s + ft_strlen(s);
-	while (ptr >= s)
+	str = c;
+	i = 0;
+	end = NULL;
+	while (s[i] != '\0')
 	{
-		if (*ptr == c)
-		{
-			return (ptr);
-		}
-		ptr--;
+		if (s[i] == str)
+			end = (char *)&s[i];
+		i++;
 	}
-	return (NULL);
+	if (s[i] == (unsigned char)c)
+		return ((char *)&s[i]);
+	return (end);
 }
 /*
-#include <stdio.h>
-
-int main(void)
+int	main(void)
 {
-	char *str = "Hola, mundo";
-	char c = 'n';
-	char *ptr;
-	int	n;
+	char	*str = "Hello, friend";
+	char	c = 'i';
+	char	*ptr;
+	int		n;
 
 	ptr = ft_strrchr(str, c);
 	n = ft_strlen(ptr);
-
 	if (ptr)
 	{
-		printf("Character '%c' found in string '%s' back position '%d'.\n", 
-		c, str, n);
+		printf("Character '%c' found in string '%s' back position '%d'.\n",
+			c, str, n);
 	}
 	else
 	{
