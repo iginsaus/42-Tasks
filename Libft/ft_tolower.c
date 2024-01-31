@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iginsaus <iginsaus@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/11 14:24:13 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/11 14:25:07 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/01/30 17:37:32 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/01/31 16:35:19 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,12 @@ int	ft_tolower(int c)
 	return (c);
 }
 /*
-int main (void)
+int	main(void)
 {
-	char a;
-	a = 'x';
+	char	a;
 
-	a = ft_toupper(a);
+	a = 'Y';
+	a = ft_tolower(a);
 	printf("%c\n", a);
 	return (0);
 }
