@@ -14,23 +14,20 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	c;
+	long	ln;
 
-	if (n == -2147483648)
+	ln = n;
+	if (ln < 0)
 	{
-		write(fd, "-2147483648", ft_strlen("-2147483648"));
-		return ;
+		ft_putchar_fd('-', fd);
+		ln *= -1;
 	}
-	if (n < 0)
+	if (ln <= 9)
+		ft_putchar_fd(ln + '0', fd);
+	else
 	{
-		write(fd, "-", 1);
-		n = -n;
-	}
-	while (n > 0)
-	{
-		c = n % 10 + '0';
-		write(fd, &c, 1);
-		n /= 10;
+		ft_putnbr_fd(ln / 10, fd);
+		ft_putnbr_fd(ln % 10, fd);
 	}
 }
 /*
