@@ -3,41 +3,43 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iginsaus <iginsaus@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/24 17:26:38 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/24 17:26:41 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/02/01 14:08:20 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/02/01 14:35:06 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_striteri(char *s, void (*f)(unsigned int, char *)) {
-  unsigned int i = 0;
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+{
+	unsigned int	i;
 
-  if (!s || !f) {
-    return;
-  }
-
-  while (s[i]) {
-    f(i, &s[i]);
-    i++;
-  }
+	i = 0;
+	if (!s || !f)
+	{
+		return ;
+	}
+	while (s[i])
+	{
+		f(i, &s[i]);
+		i++;
+	}
 }
 /*
-void custom_function(unsigned int i, char *c) {
-  (void)i; // To suppress the unused parameter warning
-  *c = ft_toupper((int)*c);
+void	custom_function(unsigned int i, char *c)
+{
+	(void)i;
+	*c = ft_toupper((int)*c);
 }
 
-int main() {
-  char s[] = "Hola, mundo";
+int	main(void)
+{
+	char	s[] = "Hola, mundo";
 
-  ft_striteri(s, &custom_function);
-
-  printf("String: %s\n", s);
-
-  return 0;
+	ft_striteri(s, &custom_function);
+	printf("String: %s\n", s);
+	return (0);
 }
 */
-
