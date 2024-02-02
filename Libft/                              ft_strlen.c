@@ -12,26 +12,21 @@
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+size_t ft_strlen(const char *s)
 {
-	size_t	i;
+    size_t i = 0;
 
-	i = 0;
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
+    while (s[i] != '\0')
+        i++;
+    return (i);
 }
 /*
-int	main(void)
+int main(void)
 {
-	char	*s;
-	size_t	i;
+    char *s = "Hola Mundo";
+    size_t i = ft_strlen(s);
 
-	s = "Hola Mundo";
-	i = ft_strlen(s);
-	printf("Length of string \"Hola Mundo\" is: %zu\n", i);
-	return (0);
+    printf("Length of string \"%s\" is: %zu\n", s, i);
+    return (0);
 }
 */
