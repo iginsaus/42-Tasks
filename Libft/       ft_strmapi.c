@@ -6,7 +6,7 @@
 /*   By: iginsaus <iginsaus@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 14:37:55 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/02/01 14:52:32 by iginsaus         ###   ########.fr       */
+/*   Updated: 2024/02/05 15:10:32 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,12 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	new_str[i] = '\0';
 	return (new_str);
 }
-/*
+
 char	my_function(unsigned int i, char c)
 {
 	return (c + (char)i);
 }
-
+/*
 int	main(void)
 {
 	char	*s = "Hello, world";
