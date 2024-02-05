@@ -3,60 +3,43 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iginsaus <iginsaus@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/24 17:24:56 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/24 17:25:00 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/02/05 13:23:20 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/02/05 14:05:26 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strtrim(char const *s1, char const *set) {
-  char *ret;
-  size_t start, end;
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	size_t	len;
 
-  if (!s1 || !set) {
-    return NULL;
-  }
-
-  start = 0;
-  while (s1[start] && ft_strchr(set, s1[start])) {
-    start++;
-  }
-
-  end = ft_strlen(s1) - 1;
-  while (end > start && ft_strchr(set, s1[end])) {
-    end--;
-  }
-
-  ret = malloc(end - start + 2);
-  if (!ret) {
-    return NULL;
-  }
-
-  ft_memcpy(ret, s1 + start, end - start + 1);
-  ret[end - start + 1] = '\0';
-
-  return ret;
+	if (!s1 || !set)
+		return (0);
+	while (*s1 && ft_strchr(set, *s1))
+		s1++;
+	len = ft_strlen(s1);
+	while (ft_strrchr(set, s1[len]) && len)
+		len--;
+	return (ft_substr(s1, 0, len + 1));
 }
 /*
-int main() {
-  char *s1 = "    Hola, mundo   ";
-  char *set = " ";
-  char *ret;
+int	main(void)
+{
+	char	*s1 = "    Hola, mundo   ";
+	char	*set = " ";
+	char	*ret;
 
-  ret = ft_strtrim(s1, set);
-  if (ret == NULL) {
-    printf("Error allocating memory for new string\n");
-    return 1;
-  }
-
-  printf("New string: %s\n", ret);
-
-  free(ret);
-
-  return 0;
+	ret = ft_strtrim(s1, set);
+	if (ret == NULL)
+	{
+		printf("Error allocating memory for new string\n");
+		return (1);
+	}
+	printf("New string: %s\n", ret);
+	free(ret);
+	return (0);
 }
 */
-
