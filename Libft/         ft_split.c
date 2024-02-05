@@ -3,86 +3,114 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iginsaus <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: iginsaus <iginsaus@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/24 17:25:16 by iginsaus          #+#    #+#             */
-/*   Updated: 2024/01/24 17:25:34 by iginsaus         ###   ########.fr       */
+/*   Created: 2024/02/01 15:08:00 by iginsaus          #+#    #+#             */
+/*   Updated: 2024/02/05 14:58:49 by iginsaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char **ft_split(char const *s, char c) {
-  char **arr;
-  size_t i, start, len;
+static int	ft_countwords(char const *str, char c)
+{
+	int	i;
+	int	count_words;
 
-  if (!s) {
-    return NULL;
-  }
+	i = 0;
+	count_words = 0;
+	while (str[i] != '\0')
+	{
+		while (str[i] == c)
+			i++;
+		if (str[i] != '\0')
+			count_words++;
+		while (str[i] != c && str[i] != '\0')
+			i++;
+	}
+	return (count_words);
+}
 
-  i = 0;
-  while (s[i] == c) {
-    i++;
-  }
+static void	ft_free(char **str)
+{
+	int	i;
 
-  if (s[i] == '\0') {
-    return (char **)malloc(sizeof(char *) * 1);
-  }
+	i = 0;
+	while (str[i])
+	{
+		free (str[i]);
+		i++;
+	}
+	free (str);
+}
 
-  start = i;
-  len = 1;
+static int	ft_fillwords(char const *str, char c, char **matrix)
+{
+	int	matrix_index;
+	int	start;
+	int	end;
 
-  while (s[i]) {
-    if (s[i] == c) {
-      arr = (char **)realloc(arr, sizeof(char *) * (len + 1));
-      if (!arr) {
-        return NULL;
-      }
+	matrix_index = 0;
+	end = 0;
+	while (ft_countwords(str, c) > matrix_index)
+	{
+		start = end;
+		while (str[start] == c)
+			start++;
+		end = start;
+		while (str[end] != c && str[end] != '\0')
+			end++;
+		matrix[matrix_index] = ft_substr(str, start, (end - start));
+		if (!matrix[matrix_index])
+		{
+			ft_free(matrix);
+			return (0);
+		}
+		matrix_index++;
+	}
+	return (1);
+}
 
-      arr[len - 1] = ft_substr(s, start, i - start);
-      if (!arr[len - 1]) {
-        return NULL;
-      }
+char	**ft_split(char const *s, char c)
+{
+	char	**matrix;
 
-      start = i + 1;
-      len++;
-    }
-    i++;
-  }
-
-  arr = (char **)realloc(arr, sizeof(char *) * (len + 1));
-  if (!arr) {
-    return NULL;
-  }
-
-  arr[len - 1] = ft_substr(s, start, i - start);
-  if (!arr[len - 1]) {
-    return NULL;
-  }
-
-  return arr;
+	if (!s)
+		return (NULL);
+	matrix = malloc(sizeof(char *) * (ft_countwords(s, c) + 1));
+	if (!matrix)
+		return (NULL);
+	matrix[ft_countwords(s, c)] = NULL;
+	if (ft_fillwords(s, c, matrix) == 0)
+		return (NULL);
+	return (matrix);
 }
 /*
-int main() {
-  char *s = "Hola, mundo, hola";
-  char **arr;
-  int i;
+int	main(void)
+{
+	char	*s = "Hola, mundo, hola";
+	char	**arr;
+	int		i;
 
-  arr = ft_split(s, ',');
-  if (arr == NULL) {
-    printf("Error allocating memory for array\n");
-    return 1;
-  }
-
-  for (i = 0; arr[i]; i++) {
-    printf("Subcadena %d: %s\n", i, arr[i]);
-  }
-
-  for (i = 0; arr[i]; i++) {
-    free(arr[i]);
-  }
-  free(arr);
-
-  return 0;
+	arr = ft_split(s, ',');
+	if (arr == NULL)
+	{
+		printf("Error allocating memory for array\n");
+		return (1);
+	}
+	i = 0;
+	while (arr[i])
+	{
+		printf("Subcadena %d: %s\n", i, arr[i]);
+		i++;
+	}
+	i = 0;
+	while (arr[i])
+	{
+		free(arr[i]);
+		i++;
+	}
+	free(arr);
+	return (0);
 }
 */
