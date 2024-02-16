@@ -27,11 +27,19 @@ int	main(void)
 {
 	char	str[11] = "Hello World";
 	int		i = 0;
-
+	int		j = 0;
+	printf("Before ft_bzero\n");
+	while (j < 11)
+	{
+		printf("%c", str[j]);
+		j++;
+	}
+	printf("\n");
+	printf("After ft_bzero n=3\n");
 	ft_bzero(str, 3);
 	while (i < 11)
 	{
-		printf("%c\n", str[i]);
+		printf("%c", str[i]);
 		i++;
 	}
 	return (0);
