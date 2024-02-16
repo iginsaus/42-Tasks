@@ -14,36 +14,50 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char		*new_str;
-	size_t		len1;
-	size_t		len2;
+	char	*str;
+	size_t	i;
+	size_t	j;
 
-	len1 = ft_strlen(s1);
-	len2 = ft_strlen(s2);
-	new_str = malloc(len1 + len2 + 1);
-	if (new_str == NULL)
+	if (!s1 || !s2)
+		return (0);
+	str = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+	if (!str)
+		return (0);
+	i = 0;
+	while (s1[i])
 	{
-		return (NULL);
+		str[i] = s1[i];
+		i++;
 	}
-	strcpy(new_str, s1);
-	strcat(new_str, s2);
-	return (new_str);
+	j = 0;
+	while (s2[j])
+	{
+		str[i + j] = s2[j];
+		j++;
+	}
+	str[i + j] = '\0';
+	return (str);
 }
 /*
-int	main(void)
+int main(void) 
 {
-	char	*s1 = "Hola";
-	char	*s2 = ", mundo";
-	char	*new_str;
+  char *s1 = "Hello ";
+  char *s2 = "world";
+  char *new_str;
 
-	new_str = ft_strjoin(s1, s2);
-	if (new_str == NULL)
+  new_str = ft_strjoin(s1, s2);
+  if (new_str == NULL) 
 	{
-		printf("Error allocating memory for new string\n");
-		return (1);
-	}
-	printf("New string: %s\n", new_str);
-	free(new_str);
-	return (0);
+    printf("Error allocating memory for new string\n");
+    return (1);
+  }
+
+  printf("First string: %s\n", s1);
+	printf("Second string: %s\n", s2);
+	printf("New string joining: %s\n", new_str);
+
+  free(new_str);
+
+  return (0);
 }
 */
