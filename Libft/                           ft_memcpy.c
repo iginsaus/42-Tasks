@@ -27,13 +27,17 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	return (dst);
 }
 /*
-int	main(void)
+int main(void)
 {
-	char	src[18] = "memcpy example";
-	char	dst[18];
-
-	ft_memcpy(dst, src, sizeof(src));
-	printf("Copied string:  %s\n", dst);
-	return (0);
+    char src[17] = "ft_memcpy example";
+    char dst[17];
+    
+    printf("Original string: %s\n", src);
+    
+    ft_memcpy(dst, src, 9);
+    
+    printf("Copied 9: %s\n", dst);
+    
+    return (0);
 }
 */
