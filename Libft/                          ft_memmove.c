@@ -36,13 +36,17 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	return (dst);
 }
 /*
-int	main(void)
+int main(void)
 {
-	char	src[18] = "memmove example";
-	char	dst[18];
-
-	ft_memmove(dst, src, sizeof(src));
-	printf("Copied string:  %s\n", dst);
-	return (0);
+    char src[18] = "ft_memmove example";
+    char dst[25] = "           no overlapping";
+    
+		printf("Source src: %s\n", src);
+    ft_memmove(dst, src, 10);
+    
+    printf("Brought to dst: %s\n", dst);
+    
+    return (0);
 }
 */
+
