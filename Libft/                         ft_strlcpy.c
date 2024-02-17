@@ -14,8 +14,8 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	unsigned int	i;
-	unsigned int	c;
+	size_t	i;
+	size_t	c;
 
 	i = 0;
 	c = 0;
@@ -33,14 +33,17 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	return (c);
 }
 /*
-int	main(void)
+int main(void)
 {
-	char	src[10] = "Bye World!";
-	char	dst[4];
-	size_t	len = ft_strlcpy(dst, src, sizeof(dst));
+  char src[] = "Hello world!";
+  char dst[6];
 
-	printf("La cadena copiada es: %s\n", dst);
-	printf("La longitud de la cadena original es: %zu\n", len);
-	return (0);
+  size_t len = ft_strlcpy(dst, src, sizeof(dst));
+
+  printf("Copied string is: %s\n", dst);
+  printf("Length of original string is: %zu\n", len);
+	printf("Original string was: %s\n", src);
+
+  return (0);
 }
 */
