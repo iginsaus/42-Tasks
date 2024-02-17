@@ -14,36 +14,29 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	char		str;
-	int			i;
-
-	str = c;
-	i = 0;
-	while (s[i] != str)
+	while (*s)
 	{
-		if (s[i] == 0)
-			return (NULL);
-		i++;
+		if (*s == c)
+			return ((char *)s);
+		s++;
 	}
-	return ((char *)&s[i]);
+	return (NULL);
 }
 /*
-int	main(void)
+int main(void)
 {
-	char	*str = "Hello, friend";
-	char	c = 'o';
-	char	*ptr;
+	char *str = "Hello World";
+	char c = 'o';
+	char *ptr;
 
 	ptr = ft_strchr(str, c);
+
 	if (ptr)
-	{
 		printf("Character '%c' found in string '%s', in position '%ld'\n",
 			c, str, (ptr - str) + 1);
-	}
 	else
-	{
 		printf("Character '%c' not not found in string '%s'.\n", c, str);
-	}
+
 	return (0);
 }
 */
