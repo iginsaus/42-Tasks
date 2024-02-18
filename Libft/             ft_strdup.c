@@ -27,14 +27,15 @@ char	*ft_strdup(const char *src)
 	return (dest);
 }
 /*
-int	main(void)
+int main(void)
 {
-	char	*str1 = "Hello my friend";
-	char	*str2;
+    char *str1 = "Hello, friend";
+    char *str2;
 
-	str2 = ft_strdup(str1);
-	printf("%s\n", str2);
-	free (str2);
-	return (0);
+    str2 = ft_strdup(str1);
+    printf("Original string is: %s\n", str1);
+    printf("Duplicated string is: %s\n", str2);
+    free(str2);
+    return (0);
 }
 */
