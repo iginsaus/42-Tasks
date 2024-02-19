@@ -28,18 +28,20 @@ char	*ft_strtrim(char const *s1, char const *set)
 /*
 int	main(void)
 {
-	char	*s1 = "    Hola, mundo   ";
-	char	*set = " ";
-	char	*ret;
+	char	*s1 = "**??**Hola, mundo***??**???**";
+	char	*set = "*?";
+	char	*trm;
 
-	ret = ft_strtrim(s1, set);
-	if (ret == NULL)
+	printf("Original string: \"%s\"\n", s1);
+	printf("Trim by: \"%s\"\n", set);
+	trm = ft_strtrim(s1, set);
+	if (trm == NULL)
 	{
 		printf("Error allocating memory for new string\n");
 		return (1);
 	}
-	printf("New string: %s\n", ret);
-	free(ret);
+	printf("New string: \"%s\"\n", trm);
+	free(trm);
 	return (0);
 }
 */
